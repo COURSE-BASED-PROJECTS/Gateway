@@ -13,6 +13,9 @@ spring:
             allowedMethods:
               - GET
               - POST
+              - PUT
+              - PATCH
+              - DELETE
   application:
     name: gateway
   jackson:
