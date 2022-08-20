@@ -18,6 +18,8 @@ public class GatewayConfig {
                 .route("account-service", r -> r.path("/auth/**").uri("http://localhost:9091"))
                 .route("driver-service", r -> r.path("/api/driver/**").uri("http://localhost:9092"))
                 .route("request-service", r -> r.path("/api/request/**").uri("http://localhost:9093"))
+                .route("request-service", r -> r.path("/api/hailing/**").uri("http://localhost:9093"))
+                .route("request-service", r -> r.path("/api/location/**").uri("http://localhost:9093"))
                 .route("taxi-service", r -> r.path("/api/taxi/**").uri("http://localhost:9094"))
                 .build();
     }
